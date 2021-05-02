@@ -1,3 +1,43 @@
-h1{
-    color: red;
-}
+#titleoverlay {
+    position: relative;
+  }
+  
+#titleimg{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+  }
+
+#titlebg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:black;
+  }
+  
+  #titleoverlay:hover #titlebg {
+    opacity: 0.8;
+  }
+  
+  #titleoverlay:hover #titletext {
+    text-align: center;
+    text-shadow: 1.5px 1.5px black;
+    color: white;
+    font-size: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  #titletext2{
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+  }
