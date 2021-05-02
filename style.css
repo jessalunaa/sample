@@ -45,25 +45,23 @@ body{
     text-shadow: 1px 1px black;
   }
 
-  #contentheader{
+  #contentheader1{
     padding: 5rem 2rem;
       text-align: center;
       font-size: 42px;
-      margin-top: 10%;
-      margin-top: 5%;
   }
    #profilemt {
             display: flex;
             background-color: #f5f5f5;
             align-items: center;
-            width: 100vw;
-            height: 100vh;
+            width: auto;
+            height: auto;
             }
 
         #profilemt1, #profilemt2 {
             color: black;
             width: 100vw;
-            height: 100vh;
+            height: auto;
             text-align: center;
             font-size: 24px;
             text-align: justify;
@@ -75,6 +73,22 @@ body{
         }
 
         #charityimg{
-            margin-left: 1.5%;
+            margin-left: 15%;
             margin-right: auto;
         }
+
+        #contentheader2{
+            margin-top: 10%;
+              text-align: center;
+              font-size: 42px;
+          }
+
+         #missionary {
+            color: black;
+            width: auto;
+            height: auto;
+            text-align: center;
+            font-size: 24px;
+            text-align: justify;
+            padding: 3%;
+            }
