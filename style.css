@@ -92,3 +92,23 @@ body{
             text-align: justify;
             padding: 3%;
             }
+
+            div.gallery{
+              margin-left: 5%;
+              margin-right: auto;
+              height: 100vh;
+            }
+
+            div.charimg {
+                text-align: center;
+                margin: 20px;
+                float: left;
+                width: 380px;
+              }
+
+              div.gallery img {
+       
+                width: 100%;
+                height: 230px;
+              }
+        
