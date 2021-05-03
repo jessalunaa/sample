@@ -3,17 +3,30 @@ body{
 }
 #titleoverlay {
     position: relative;
+    display: flex;
   }
-  
+   
 #titleimg{
-    height: 100vh;
-    width: 100vw;
+  display: flex;
+  width: 100%;
+  }
+
+  @media screen and (max-width: 300px) {
+    #titleoverlay, #titleimg{
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      }
+
+  .cont{
+    display: flex;
+    justify-content: center;
   }
 
 #titlebg {
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    width: 100%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -23,12 +36,20 @@ body{
     background-color:black;
   }
 
+  #content1{
+    display: flex;
+    flex-direction: column;
+  }
+
   
   #titleoverlay:hover #titlebg {
+    display: flex;
     opacity: 0.75;
   }
   
   #titleoverlay:hover #titletext {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     text-shadow: 1.5px 1.5px black;
     color: white;
@@ -40,41 +61,103 @@ body{
     -ms-transform: translate(-50%, -50%);
   }
 
+  @media screen and (max-width: 300px) {
+    #titleoverlay:hover, #titletext{
+      font-size: 24px;
+      }
+  }
+ 
   #titletext2{
     font-size: 30px;
     text-shadow: 1px 1px black;
   }
+  @media screen and (max-width: 300px) {
+    #titletext2{
+      font-size: 35px;
+      text-shadow: 0.5px 0.5px black;
+    }
+
+    @media screen and (max-width: 300px) {
+      #titletext1{
+        font-size: 40px;
+        text-shadow: 0.5px 0.5px black;
+      }
 
   #contentheader1{
     padding: 5rem 2rem;
       text-align: center;
       font-size: 42px;
   }
+
+  @media screen and (max-width: 300px) {
+    #contentheader1{
+        text-align: center;
+        font-size: 21px;
+    }
+  }
+
    #profilemt {
             display: flex;
             background-color: #f5f5f5;
-            align-items: center;
+            text-align: center;
             width: auto;
             height: auto;
             }
 
         #profilemt1, #profilemt2 {
             color: black;
-            width: 100vw;
+            width: 100%;
             height: auto;
+            display: flex;
+            flex-direction: column;
             text-align: center;
             font-size: 24px;
             text-align: justify;
         }
 
-        #earlyageimg{
-            margin-left: 30%;
-            margin-right: auto;
+        @media screen and (max-width: 300px) {
+          #profilemt {
+            text-align: center;
+            width: 100%;
+            font-size: 12px;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            }
         }
 
+        .profile1cont{
+           display: flex;
+           flex-direction: column;
+           align-content: center;
+           width: fit-content;
+        }
+
+        @media screen and (max-width: 300px) {
+          #earlyageimg{
+            width: 50%;
+            display: flex;  
+            flex-direction: column;        
+            text-align: center;
+        }
+        }
+
+        #earlyageimg{
+          display: flex;          
+          text-align: center;
+      }
+
+      @media screen and (max-width: 300px) {
+        #earlyageimg, #charityimg{
+          width: 100%;
+          display: flex;          
+          text-align: center;
+      }
+      }
+
         #charityimg{
-            margin-left: 15%;
-            margin-right: auto;
+          display: flex;         
+          text-align: center;
         }
 
         #contentheader2{
@@ -94,18 +177,17 @@ body{
             }
 
             div.gallery{
-              width: 100vw;
-              height: 100vh;
-              margin-left: 10%;       
+              width: 100%;
+              display: flex;   
+              justify-content: center;
             }
 
             div.charimg {
-                text-align: center;
                 margin: 20px;
-                float: left;
+                display: flex;
                 width: 300px; 
-                height: 500px;
                 transition: width 3s, height 6s; 
+                justify-content: space-between;
               }
 
               div.gallery img {
@@ -114,4 +196,21 @@ body{
               }
               div.charimg:hover {
                 width: 600px;
-                height: 1000px;
+              }
+
+              #contentsrc{
+                margin-top: 5%;
+                font-size: 18px;
+                text-align: center;
+                text-decoration: none;
+                font-family: monospace;
+              }
+
+              @media screen and (max-width: 300px){
+              div.gallery {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;   
+              }         
