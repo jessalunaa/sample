@@ -15,11 +15,27 @@ body{
   @media screen and (max-width: 300px) {
     #titleoverlay, #titleimg{
       display: flex;
-      height: 100vh;
-      width: 100vw;
+      height: 100%;
+      width: 100%;
       }
     }
 
+    @media screen and (max-width: 600px) {
+      #titleoverlay, #titleimg{
+        display: flex;
+        height: 100%;
+        width: 100% ;
+        }
+      }
+
+      @media screen and (max-width: 1300px) {
+        #titleoverlay, #titleimg{
+          display: flex;
+          height: 100vh;
+          width: 100%;
+          }
+        }
+  
 
   .cont{
     display: flex;
@@ -69,6 +85,13 @@ body{
       font-size: 24px;
       }
   }
+
+  @media screen and (max-width: 600px) {
+    #titleoverlay:hover, #titletext{
+      font-size: 24px;
+      display: flex;
+      }
+  }
  
   #titletext2{
     font-size: 30px;
@@ -82,12 +105,26 @@ body{
     }
   }
 
-    @media screen and (max-width: 300px) {
+    @media screen and (max-width: 600px) {
       #titletext1{
-        font-size: 40px;
+        font-size: 30px;
         text-shadow: 0.5px 0.5px black;
       }
     }
+
+    @media screen and (max-width: 600px) {
+      #titletext2{
+        font-size: 24px;
+        text-shadow: 0.5px 0.5px black;
+      }
+    }
+  
+      @media screen and (max-width: 300px) {
+        #titletext1{
+          font-size: 40px;
+          text-shadow: 0.5px 0.5px black;
+        }
+      }
 
   #contentheader1{
     padding: 5rem 2rem;
@@ -132,6 +169,30 @@ body{
             }
         }
 
+        @media screen and (max-width: 600px) {
+          #profilemt {
+            text-align: center;
+            width: 100%;
+            font-size: 12px;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            }
+        }
+
+        
+
+        @media screen and (max-width: 1300px) {
+          #profilemt {
+            text-align: center;
+            width: 100%;
+            font-size: 12px;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            }
+        }
+        
         .profile1cont{
            display: flex;
            flex-direction: column;
@@ -161,9 +222,17 @@ body{
       }
       }
 
+      @media screen and (max-width: 600px) {
+        #earlyageimg, #charityimg{
+          display: flex;          
+          text-align: center;
+      }
+      }
+
         #charityimg{
           display: flex;         
           text-align: center;
+          width: 100%;
         }
 
         #contentheader2{
@@ -214,6 +283,26 @@ body{
               }
 
               @media screen and (max-width: 300px){
+              div.gallery {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;   
+              }         
+            }
+
+            @media screen and (max-width: 600px){
+              div.gallery {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;   
+              }         
+            }
+
+            @media screen and (max-width: 1300px){
               div.gallery {
                   width: 100%;
                   display: flex;
